@@ -7,7 +7,7 @@ Aplicação de crud em Nodejs e React como forma de aprendizado do MongoDB.
 
 - [ ] Inserção de produtos
 - [ ] Atualização de produtos existentes
-- [ ] Listagem de todos os produtos
+- [x] Listagem de todos os produtos
 - [ ] Deleção de produtos
 - [ ] Busca de produtos por nome
 
