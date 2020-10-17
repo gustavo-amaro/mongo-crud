@@ -43,3 +43,15 @@ export const Container = styled.div`
   }
 
 `;
+
+export const ButtonTable = styled.button`
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    height: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-width: 839px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+`;

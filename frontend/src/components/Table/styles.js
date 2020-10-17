@@ -6,7 +6,8 @@ export const ContainerTable = styled.table`
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   min-width: 839px;
-  width: 70%;
+  width: 100%;
+  z-index: 2;
   tr{
     min-height: 29px;
     td, th{
