@@ -17,6 +17,11 @@ export const Container = styled.div`
   top: 0;
   left: 0;
   font-family: 'Ubuntu', sans-serif;
+  button{
+      cursor: pointer;
+      outline: none;
+      font-family: 'Ubuntu';
+  }
   *, body{
     margin: 0;
     padding: 0;

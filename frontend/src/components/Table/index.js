@@ -1,23 +1,12 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React from 'react';
 import api from '../../services/api';
 import { FaEdit, FaTrash } from 'react-icons/fa';
 
 import { ContainerTable } from './styles';
 
-function Table() {
-    const [products, setProducts] = useState([]);
-    
-    const fetchProducts = useCallback(async ()=> {
-        const products = (await api.get('/products')).data.products;
-        setProducts(products);
-    }, [])
-
-    useEffect(()=>{
-        fetchProducts();
-    }, [fetchProducts]);
+function Table({fetchProducts, products}) {
 
     async function deleteProduct(id){
-        console.log(id)
         await api.delete(`/products/${id}`);
         fetchProducts();
     }
